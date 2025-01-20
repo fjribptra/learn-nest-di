@@ -4,6 +4,7 @@ import { PowerModule } from 'src/power/power.module';
 
 @Module({
   providers: [CpuService],
+  exports: [CpuService],
   imports: [PowerModule],
 })
 export class CpuModule {}
